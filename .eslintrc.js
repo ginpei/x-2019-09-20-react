@@ -4,6 +4,6 @@ module.exports = {
   ],
   rules: {
     // disallow assigning parameters and their properties
-    // 'no-param-reassign': ['error', { 'props': true }],
+    'no-param-reassign': ['error', { 'props': true }],
   },
 };
