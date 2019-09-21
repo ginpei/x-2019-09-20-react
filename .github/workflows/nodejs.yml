@@ -31,7 +31,7 @@ jobs:
         echo ${{ github.ref }}
         echo ${{ github }}
     - name: Firebase deployment
-      if: github.ref == 'release'
+      if: github.ref == 'refs/heads/release'
       run: |
         npx firebase-tools deploy --token "$FIREBASE_TOKEN"
       env:
