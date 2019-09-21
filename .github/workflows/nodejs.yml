@@ -25,11 +25,6 @@ jobs:
         npm test
       env:
         CI: true
-    - name: Check github obj
-      run: |
-        echo ${{ secrets.HOGE }}
-        echo ${{ github.ref }}
-        echo ${{ github }}
     - name: Firebase deployment
       if: github.ref == 'refs/heads/release'
       run: |
